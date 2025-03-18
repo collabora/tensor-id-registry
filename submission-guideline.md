@@ -29,32 +29,11 @@ Anatomy of an tensor-id
 3. Append "-variant-1" term if this encoding is a derivative of the original tensor encoding. If a "variant-1" already exist, use the next variant index. Ex."variant-2". Append "-out" it the tensor is an output of the inference. Use "-in" it is an input of the inference. Use "-inout" if it's output and an input of the inference. 
 4. If the this tensor is part of a tensor-group, append a term that identify the function of this tensor in the tensor-group.
 
-Ex:
+Example:
 
 Original N.N. Architecture: "ssd-mobilenet-v1-variant-1
 
 # Keywords
-
-## iref
-Stand for internal reference. Prefix another keywork `iref` to signify this come from a different tensor.
-Create 
-
-Example:
-
-Tensor A:
-iref: count
-tensor-shape: 1x1
-tensor-datatype: float32
-tensor-id: tensor-a
-encoding: tensor is a scalar and only contain one value that represent a count.
-
-
-Tensor B:
-iref: scores
-tensor-shape: 1 x [iref:count](submission-guide-line.md)
-
-### Formating
-* Since iref reference should not contain any space.
 
 ## Sections
 
@@ -84,9 +63,6 @@ List tensor-groups using this tensor, if it is not a generic tensor.
 ### Description
 Provide a descrition sufficient to understand the information it contain in
 in relation to analysis result and if it's associated to other tensor.
-
-#### iref
-Define an iref tag to allow other tensor to refer this tensor description.
 
 #### tensor-shape
 Provide the tensor dimensions
