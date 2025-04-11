@@ -12,8 +12,8 @@ Classes of object associated with [object location](/tensors/ssd-mobilenet-v1-va
 
 ## Classes Tensor
 
-tensor-shape: 1 x [count]
-tensor-datatype: float32, uint8
+* tensor-shape: 1 x [count]
+* tensor-datatype: float32, uint8
 
 ### Known Aliases
 * detection_classes:0
