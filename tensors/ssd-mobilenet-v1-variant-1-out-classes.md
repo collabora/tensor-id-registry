@@ -31,10 +31,10 @@ Memory layout of tensor data:
 |Index         |Value                      | Comment                        |
 |---             |---                        |---                             |
 | -              | -                         | -                              |
-|0               | det-1-objet-class         | tensor-start, tensor-data      |
-|1               | det-2-objet-class         | tensor-continue, tensor-data   |
+|0               | det-1-object-class         | tensor-start, tensor-data      |
+|1               | det-2-object-class         | tensor-continue, tensor-data   |
 |...             | ...                       | tensor-continue, tensor-data   |
-|[count] - 1     | det-[count]-objet-class   | tneosr-continue, tensor-data   | 
+|[count] - 1     | det-[count]-object-class   | tensor-continue, tensor-data   | 
 |([count])       | -                         | -                              |
 
 # External References
