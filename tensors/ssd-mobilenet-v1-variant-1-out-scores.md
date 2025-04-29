@@ -12,9 +12,9 @@ Confidence levels of [classes](/tensors/ssd-mobilenet-v1-variant-1-out-classes.m
 
 ## Scores Tensor
 
-tensor-shape: 1 x [count]
-tensor-datatype: float32, uint8
-tensor-id: out-ssd-mobilenet-v1-scores-variant-1
+* tensor-shape: 1 x [count]
+* tensor-datatype: float32, uint8
+* tensor-id: out-ssd-mobilenet-v1-scores-variant-1
 
 ### Known Aliases
 * detection_scores:0

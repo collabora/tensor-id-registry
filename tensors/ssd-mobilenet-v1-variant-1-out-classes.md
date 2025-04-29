@@ -12,8 +12,8 @@ Classes of object associated with [object location](/tensors/ssd-mobilenet-v1-va
 
 ## Classes Tensor
 
-tensor-shape: 1 x [count]
-tensor-datatype: float32, uint8
+* tensor-shape: 1 x [count]
+* tensor-datatype: float32, uint8
 
 ### Known Aliases
 * detection_classes:0
@@ -31,10 +31,10 @@ Memory layout of tensor data:
 |Index         |Value                      | Comment                        |
 |---             |---                        |---                             |
 | -              | -                         | -                              |
-|0               | det-1-objet-class         | tensor-start, tensor-data      |
-|1               | det-2-objet-class         | tensor-continue, tensor-data   |
+|0               | det-1-object-class         | tensor-start, tensor-data      |
+|1               | det-2-object-class         | tensor-continue, tensor-data   |
 |...             | ...                       | tensor-continue, tensor-data   |
-|[count] - 1     | det-[count]-objet-class   | tneosr-continue, tensor-data   | 
+|[count] - 1     | det-[count]-object-class   | tensor-continue, tensor-data   | 
 |([count])       | -                         | -                              |
 
 # External References
@@ -50,3 +50,5 @@ Memory layout of tensor data:
 |Framework | Links |
 |---       |---    |
 |GStreamer | [perm](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/blob/c206ddd9308a3ce529e0d8957b7c165b3a15c932/subprojects/gst-plugins-bad/gst/tensordecoders/gstssdobjectdetector.c#L36-39) \| [latest](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/blob/main/subprojects/gst-plugins-bad/gst/tensordecoders/gstssdobjectdetector.c?ref_type=heads#L36-39) |
+
+[count]: /tensors/generic-variant-1-out-count.md
