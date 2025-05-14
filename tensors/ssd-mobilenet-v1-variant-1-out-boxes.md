@@ -19,30 +19,32 @@ Location of objects detected
 
 ### Encoding
 
-Scheme: (X: box x coord, Y: box y coord, W: box width, H: box height)
+Scheme: (top left X, top left Y, bottom right X, bottom right Y)
+
+The coordinates are values in the [0, 1] range where [0, 0] is the top left corrner of the image, and [1, 1] is the bottom right corner. Each set of (X, Y) coordinate is the top left and bottom right corner of a possible bounding box.
 
 |box-1 | box-1 | box-1 | box-1 | box-2 | box-2 | box-2 | box-2 | ... | [count]|[count]|[count]|[count]|
 |---   |---    |---    |---    |---    |---    |---    |---    |---  |---                |---                |---                |---                |
-| X | Y | W | H | X | Y | W | H |...| X | Y | W | H |
+| top-left-X | top-left-Y | bottom-right-X | bottom-right-Y | top-left-X | top-left-Y | bottom-right-X | bottom-right-Y | ...  top-left-X | top-left-Y | bottom-right-X | bottom-right-Y |
 
 Memory layout of tensor data:
 
 |Index                  | Symbol            |Value              | Comment                             |
 |---                    |---                |---                |---                                  |
 | -                     | -                 | -                 | -                                   |
-|0                      |                   |x-coord            |tensor-start, box-0-tensor-data      |
-|1                      |                   |y-coord            |tensor-continue, box-0-tensor-data   |
-|2                      |                   |width              |tensor-continue, box-0-tensor-data   |
-|3                      |                   |height             |tensor-continue, box-0-tensor-data   |
-|4                      |                   |x-coord            |tensor-continue, box-1-tensor-data   |
-|5                      |                   |y-coord            |tensor-continue, box-1-tensor-data   |
-|6                      |                   |width              |tensor-continue, box-1-tensor-data   |
-|7                      |                   |height             |tensor-continue, box-1-tensor-data   |
+|0                      |                   |top-left-x-coord            |tensor-start, box-0-tensor-data      |
+|1                      |                   |top-left-y-coord            |tensor-continue, box-0-tensor-data   |
+|2                      |                   |bottom-right-x-coord              |tensor-continue, box-0-tensor-data   |
+|3                      |                   |bottom-right-y-coord             |tensor-continue, box-0-tensor-data   |
+|4                      |                   |top-left-x-coord            |tensor-continue, box-1-tensor-data   |
+|5                      |                   |top-left-y-coord            |tensor-continue, box-1-tensor-data   |
+|6                      |                   |bottom-right-x-coord              |tensor-continue, box-1-tensor-data   |
+|7                      |                   |bottom-right-y-coord             |tensor-continue, box-1-tensor-data   |
 |...                    | ...               | ...               | ...                                 |
-|([count] - 1) x 4      |                   |x-coord            |tensor-continue, [count]-tensor-data |
-|([count] - 1) x 4 + 1  |                   |y-coord            |tensor-continue, [count]-tensor-data |
-|([count] - 1) x 4 + 2  |                   |width              |tensor-continue, [count]-tensor-data |
-|([count] - 1) x 4 + 3  |                   |height             |tensor-continue, [count]-tensor-data |
+|([count] - 1) x 4      |                   |top-left-x-coord            |tensor-continue, [count]-tensor-data |
+|([count] - 1) x 4 + 1  |                   |top-left-y-coord            |tensor-continue, [count]-tensor-data |
+|([count] - 1) x 4 + 2  |                   |bottom-right-x-coord              |tensor-continue, [count]-tensor-data |
+|([count] - 1) x 4 + 3  |                   |bottom-right-y-coord             |tensor-continue, [count]-tensor-data |
 | -                     | -                 | -                 | -                                   |
 
 # External References
