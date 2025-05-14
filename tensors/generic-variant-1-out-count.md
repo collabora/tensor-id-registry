@@ -15,7 +15,7 @@ Scalar expressing a count.
 - tensor-id: generic-variant-1-count
 
 ## Known Aliases
-* num_detecions:0
+* num_detections:0
 
 ### Encoding
 Count value stored in the tensor.
