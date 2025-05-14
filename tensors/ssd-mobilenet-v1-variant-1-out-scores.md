@@ -20,7 +20,7 @@ Confidence levels of [classes](/tensors/ssd-mobilenet-v1-variant-1-out-classes.m
 * detection_scores:0
 
 ### Encoding
-Number of detections corresponding to the value stored in the tensor.
+Number of detections corresponding to the value stored in the tensor. A higher score means the model is more certain of the accuracy of the detection.
 
 Memory layout of tensor data:
 

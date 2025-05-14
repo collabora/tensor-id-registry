@@ -20,6 +20,9 @@ Classes of object associated with [object location](/tensors/ssd-mobilenet-v1-va
 
 ### Encoding
 
+The classes refer to the class-id that identify the object classes in
+the training data'
+
 Scheme:
 |det-1          | det-2         | ... | det-[count]  |
 |---            |---            |---  |---              |
