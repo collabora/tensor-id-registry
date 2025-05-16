@@ -7,6 +7,7 @@
 |ssd-mobilenet-v1-variant-1-out-classes | [details](/tensors/ssd-mobilenet-v1-variant-1-out-classes.md) |
 |ssd-mobilenet-v1-variant-1-out-scores | [details](/tensors/ssd-mobilenet-v1-variant-1-out-scores.md) |
 |classification-generic-out | [details](/tensors/classification-generic-out.md) |
+|classification-generic-softmaxed-out | [details](/tensors/classification-generic-softmaxed-out.md) |
 
 
 # Tensor Groups (Model Family)
