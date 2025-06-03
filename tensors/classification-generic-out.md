@@ -12,7 +12,7 @@ Vector of relative confidence levels.
 
 - tensor-shape: 1 x n
 - tensor-datatype: float32, uint8
-- tensor-id: classification-out
+- tensor-id: classification-generic-out
 
 ## Known Aliases
 * output
