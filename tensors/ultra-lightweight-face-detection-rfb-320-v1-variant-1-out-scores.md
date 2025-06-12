@@ -14,20 +14,23 @@ Confidence levels of faces associated [bounding boxes location](/tensors/ultra-l
 
 * tensor-shape: 1 x Num of Bounding Box predictions x 2
 * tensor-datatype: float32
-* tensor-id: out-ultra-lightweight-face-detection-rfb-320-v1-variant-1
+* tensor-id: ultra-lightweight-face-detection-rfb-320-v1-variant-1-out-scores
 
 ### Encoding
 Number of detected faces corresponding to the value stored in the tensor.
 
 Memory layout of tensor data:
 
-|Index                            |Value                                | Value                   |
-|---                              |---                                  |---                      |
-| -                               | -                                   | -                       | -                       |
-|0                                | det-1-background-score              | det-1-foreground-score  |
-|1                                | det-2-background-score              | det-2-foreground-score  |
-|...                              | ...                                 | ...                     | ...                     |
-|n - 1                            | det-n-1-background-score            | det-n-1-foreground-score|
+|Index                            |Value                                |
+|---                              |---                                  |
+| -                               | -                                   |
+|0                                | det-1-background-score              |
+|1                                | det-1-foreground-score              |
+|2                                | det-2-background-score              |
+|3                                | det-2-foreground-score              |
+|...                              | ...                                 |
+|2n - 2                            | det-n-1-background-score            |
+|2n - 1                            | det-n-1-foreground-score            |
 
 # External References
 
@@ -41,4 +44,4 @@ Memory layout of tensor data:
 # Tensor Decoders
 |Framework | Links |
 |---       |---    |
-|GStreamer | [latest]()https://gitlab.freedesktop.org/gstreamer/gstreamer/-/blame/main/subprojects/gst-plugins-bad/gst/tensordecoders/gstfacedetectortensordecoder.c?ref_type=heads#L38-42 |
+|GStreamer | [latest](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/blame/main/subprojects/gst-plugins-bad/gst/tensordecoders/gstfacedetectortensordecoder.c?ref_type=heads#L38-42) |
