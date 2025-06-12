@@ -8,6 +8,7 @@
 |ssd-mobilenet-v1-variant-1-out-scores | [details](/tensors/ssd-mobilenet-v1-variant-1-out-scores.md) |
 |classification-generic-out | [details](/tensors/classification-generic-out.md) |
 |classification-generic-softmaxed-out | [details](/tensors/classification-generic-softmaxed-out.md) |
+|ultra-lightweight-face-detection-rfb-320-v1-variant-1-out-scores | [details](/tensors/ultra-lightweight-face-detection-rfb-320-v1-variant-1-out-scores.md) |
 
 
 # Tensor Groups (Model Family)
@@ -15,3 +16,4 @@
 |Tensor Group Id  | Description Link |
 |---              |---               |
 |ssd-mobilenet-v1-variant-1-out | [details](/tensor-groups/ssd-mobilenet-v1-variant-1-out.md) |
+|ultra-lightweight-face-detection-rfb-320-v1-variant-1-out | [details](/tensor-groups/ultra-lightweight-face-detection-rfb-320-v1-variant-1-out.md) |
