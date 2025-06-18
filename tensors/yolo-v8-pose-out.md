@@ -61,19 +61,43 @@ Row-major (C-order): first all 8400 X's, then 8400 Y's, then W's, H's, S's, K1X'
 
 | Index Range                     | Symbol | Value                     | Comment                                      |
 |---------------------------------|--------|---------------------------|----------------------------------------------|
-| 0           ... [8400 x 1] - 1  | `X`    | x-center                  | tensor-start, box-0-8399-tensor-data         |
-| [8400 x 1]  ... [8400 x 2] - 1  | `Y`    | y-center                  | tensor-continue, box-0-8399-tensor-data      |
-| [8400 x 2]  ... [8400 x 3] - 1  | `W`    | width                     | tensor-continue, box-0-8399-tensor-data      |
-| [8400 x 3]  ... [8400 x 4] - 1  | `H`    | height                    | tensor-continue, box-0-8399-tensor-data      |
-| [8400 x 4]  ... [8400 x 5] - 1  | `S`    | confidence score          | tensor-continue, box-0-8399-tensor-data      |
-| [8400 x 5]  ... [8400 x 6] - 1  | `K1X`  | keypoint 1 x-coord        | tensor-continue, box-0-8399-tensor-data      |
-| [8400 x 6]  ... [8400 x 7] - 1  | `K1Y`  | keypoint 1 y-coord        | tensor-continue, box-0-8399-tensor-data      |
-| [8400 x 7]  ... [8400 x 8] - 1  | `K1C`  | keypoint 1 confidence     | tensor-continue, box-0-8399-tensor-data      |
-| ...                             | ...    | ...                       | ...                                          |
-| [8400 x 53] ... [8400 x 54] - 1 | `K17X` | keypoint 17 x-coord       | tensor-continue, box-0-8399-tensor-data      |
-| [8400 x 54] ... [8400 x 55] - 1 | `K17Y` | keypoint 17 y-coord       | tensor-continue, box-0-8399-tensor-data      |
-| [8400 x 55] ... [8400 x 56] - 1 | `K17C` | keypoint 17 confidence    | tensor-continue, box-0-8399-tensor-data      |
-
+| 0                               | `X`    | box-0-x-center                 | tensor-start, x-center-plane-start           |
+|...                              | ...    | ...                            | ...                                          |
+| 8400 x 1 - 1                    | `X`    | box-8399-x-center              | tensor-continue, x-center-plane-end          |
+| 8400 x 1                        | `Y`    | box-0-y-center                 | tensor-continue, y-center-plane-start        |
+|...                              | ...    | ...                            | ...                                          |
+| 8400 x 2 - 1                    | `Y`    | box-8399-y-center              | tensor-continue, y-center-plane-end          |
+| 8400 x 2                        | `W`    | box-0-width                    | tensor-continue, width-plane-start           |
+|...                              | ...    | ...                            | ...                                          |
+| 8400 x 3 - 1                    | `W`    | box-8399-width                 | tensor-continue, width-plane-end             |
+| 8400 x 3                        | `H`    | box-0-height                   | tensor-continue, height-plane-start          |
+|...                              | ...    | ...                            | ...                                          |
+| 8400 x 4 - 1                    | `H`    | box-8399-height                | tensor-continue, height-plane-end            |
+| 8400 x 4                        | `S`    | box-0-confidence-score         | tensor-continue, confidence-score-plane-start      |
+|...                              | ...    | ...                            | ...                                          |
+| 8400 x 5 - 1                    | `S`    | box-8399-confidence-score      | tensor-continue, confidence-score-plane-end      |
+| 8400 x 5                        | `K1X`  | box-0-keypoint-1-x-coord       | tensor-continue, keypoint-1-x-plane-start      |
+|...                              | ...    | ...                            | ...                                          |
+| 8400 x 6 - 1                    | `K1X`  | box-8399-keypoint-1-x-coord    | tensor-continue, keypoint-1-x-plane-end      |
+| 8400 x 6                        | `K1Y`  | box-0-keypoint-1-y-coord       | tensor-continue, keypoint-1-y-plane-start      |
+|...                              | ...    | ...                            | ...                                          |
+| 8400 x 7 - 1                    | `K1Y`  | box-8399-keypoint-1-y-coord    | tensor-continue, keypoint-1-y-plane-end      |
+| 8400 x 7                        | `K1C`  | box-0-keypoint-1-confidence    | tensor-continue, keypoint-1-confidence-plane-start      |
+|...                              | ...    | ...                            | ...                                          |
+| 8400 x 8 - 1                    | `K1C`  | box-8399-keypoint-1-confidence | tensor-continue, keypoint-1-confidence-plane-end      |
+|...                              | ...    | ...                       | ...                                          |
+|...                              | ...    | ...                       | ...                                          |
+|...                              | ...    | ...                       | ...                                          |
+|...                              | ...    | ...                       | ...                                          |
+| 8400 x 53                       | `K17X` | box-0-keypoint-17-x-coord  | tensor-continue, keypoint-17-x-plane-start      |
+|...                              | ...    | ...                       | ...                                          |
+| 8400 x 54 - 1                   | `K17X` | box-8399-keypoint-17-x-coord | tensor-continue, keypoint-17-x-plane-end      |
+| 8400 x 54                       | `K17Y` | box-0-keypoint-17-y-coord  | tensor-continue, keypoint-17-y-plane-start      |
+|...                              | ...    | ...                       | ...                                          |
+| 8400 x 55 - 1                   | `K17Y` | box-8399-keypoint-17-y-coord | tensor-continue, keypoint-17-y-plane-end      |
+| 8400 x 55                       | `K17C` | box-0-keypoint-17-confidence  | tensor-continue, keypoint-17-confidence-plane-start      |
+|...                              | ...    | ...                       | ...                                          |
+| 8400 x 56 - 1                   | `K17C` | box-8399-keypoint-17-confidence | tensor-end, keypoint-17-confidence-plane-end      |
 
 
 ---
