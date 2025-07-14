@@ -17,6 +17,7 @@ combined with [prototype masks](/tensors/yolo-v8-segmentation-out-protos.md).
 
 - tensor-shape: 1 x 116 x 21504
 - tensor-datatype: float32
+- memory-layout: column-major order
 
 ### Known Aliases
 * output0

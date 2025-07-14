@@ -16,6 +16,7 @@ to create final segmentation masks for each detected object.
 
 - tensor-shape: 1 x 32 x 32 x 256
 - tensor-datatype: float32
+- memory-layout: column-major order
 
 ### Known Aliases
 * output1
