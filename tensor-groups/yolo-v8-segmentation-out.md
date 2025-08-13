@@ -14,8 +14,8 @@ masks that are combined with the coefficients to generate final segmentation mas
 YOLOv8 Segmentation Output Tensors:
 | Name                    | Shape                    | Description |
 |---                     |---                       |---          |
-| [output0] | 1 x 116 x 21504         | Detection results with mask coefficients |
-| [output1]      | 1 x 32 x 32 x 256       | Prototype mask patterns |
+| [Gst.Model.Yolo.Segmentation.Masks] | 1 x 116 x 21504         | Detection results with mask coefficients |
+| [Gst.Model.Yolo.Segmentation.Logits]      | 1 x 32 x 32 x 256       | Prototype mask patterns |
 
 ## Tensor Decoding Logic
 
