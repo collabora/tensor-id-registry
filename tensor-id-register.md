@@ -10,8 +10,8 @@
 |classification-generic-softmaxed-out | [details](/tensors/classification-generic-softmaxed-out.md) |
 |ultra-lightweight-face-detection-rfb-320-v1-variant-1-out-scores | [details](/tensors/ultra-lightweight-face-detection-rfb-320-v1-variant-1-out-scores.md) |
 |yolo-v8-pose-out | [details](/tensors/yolo-v8-pose-out.md) |
-|yolo-v8-segmentation-out-detections | [details](/tensor/yolo-v8-segmentation-out-detections.md) |
-|yolo-v8-segmentation-out-protos | [details](/tensor/yolo-v8-segmentation-out-protos.md) |
+|yolo-v8-segmentation-out-detections | [details](/tensors/yolo-v8-segmentation-out-detections.md) |
+|yolo-v8-segmentation-out-protos | [details](/tensors/yolo-v8-segmentation-out-protos.md) |
 
 # Tensor Groups (Model Family)
 
