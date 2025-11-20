@@ -5,6 +5,8 @@
 - use-case: object-detection
 - part-of-tensor-groups:
     - [ssd-mobilenet-v1-variant-1-out](/tensor-groups/ssd-mobilenet-v1-variant-1-out.md)
+    - [ultra-lightweight-face-detection-rfb-320-v1-variant-1-out](/tensor-groups/ultra-lightweight-face-detection-rfb-320-v1-variant-1-out.md)
+
 
 # Description
 Location of objects detected

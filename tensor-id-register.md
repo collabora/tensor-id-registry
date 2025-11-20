@@ -20,4 +20,5 @@
 |---              |---               |
 |ssd-mobilenet-v1-variant-1-out | [details](/tensor-groups/ssd-mobilenet-v1-variant-1-out.md) |
 |ultra-lightweight-face-detection-rfb-320-v1-variant-1-out | [details](/tensor-groups/ultra-lightweight-face-detection-rfb-320-v1-variant-1-out.md) |
+|ultra-lightweight-face-detection-rfb-320-v1-without-postproc-out | [details](/tensor-groups/ultra-lightweight-face-detection-rfb-320-v1-without-postproc-out.md) |
 |yolo-v8-segmentation-out | [details](/tensor-groups/yolo-v8-segmentation-out.md) |

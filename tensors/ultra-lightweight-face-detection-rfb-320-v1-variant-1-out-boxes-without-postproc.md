@@ -3,6 +3,8 @@
 - tensor-group: no
 - layer-type: output
 - use-case: face-detection
+- part-of-tensor-groups:
+    - [ultra-lightweight-face-detection-rfb-320-v1-without-postproc-out](/tensor-groups/ultra-lightweight-face-detection-rfb-320-v1-without-postproc-out.md)
 
 # Description
 Location of faces detected
