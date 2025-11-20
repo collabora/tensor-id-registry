@@ -5,6 +5,7 @@
 - use-case: face-detection
 - part-of-tensor-groups:
     - [ultra-lightweight-face-detection-rfb-320-v1-variant-1-out](/tensor-groups/ultra-lightweight-face-detection-rfb-320-v1-variant-1-out.md)
+    - [ultra-lightweight-face-detection-rfb-320-v1-without-postproc-out](/tensor-groups/ultra-lightweight-face-detection-rfb-320-v1-without-postproc-out.md)
 
 # Description
 
