@@ -14,8 +14,8 @@ masks that are combined with the coefficients to generate final segmentation mas
 YOLOv8 Segmentation Output Tensors:
 | Name                    | Shape                    | Description |
 |---                     |---                       |---          |
-| [output0] | 1 x 116 x 21504         | Detection results with mask coefficients |
-| [output1]      | 1 x 32 x 32 x 256       | Prototype mask patterns |
+| [detections] | 1 x 116 x 21504         | Detection results with mask coefficients |
+| [protos]      | 1 x 32 x 32 x 256       | Prototype mask patterns |
 
 ## Tensor Decoding Logic
 
@@ -68,5 +68,5 @@ Foreach i in valid_detections:
 * [YOLOv8s-seg ONNX trained on COCO](https://gitlab.collabora.com/gstreamer/onnx-models/-/blob/master/models/yolov8s-seg.onnx)
 
 
-[detections]: /tensors/yolov8-segmentation-out-detections.md
-[protos]: /tensors/yolov8-segmentation-out-protos.md
+[detections]: /tensors/yolo-v8-segmentation-out-detections.md
+[protos]: /tensors/yolo-v8-segmentation-out-protos.md
