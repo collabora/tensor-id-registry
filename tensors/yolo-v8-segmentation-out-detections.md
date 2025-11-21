@@ -4,7 +4,7 @@
 - layer-type: output
 - use-case: instance-segmentation
 - part-of-tensor-groups:
-    - [yolo-v8-segmentation-output](/tensor-groups/yolo-v8-segmentation-output.md)
+    - [yolo-v8-segmentation-out](/tensor-groups/yolo-v8-segmentation-out.md)
 
 # Description
 
