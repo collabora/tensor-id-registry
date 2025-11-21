@@ -19,7 +19,7 @@ Location of faces detected
 
 Scheme: (top left X, top left Y, width, height)
 
-The COUNT is variable and depends on the model training.
+The COUNT is the number of candidates and its value is fixed at model training time.
 
 Other constants are extracted from the training process:
 - CENTER_VARIANCE = 0.1
@@ -31,7 +31,7 @@ The COUNT can be retrieved from the tensor dimensions.
 Each entry in the table is the variance on the matching anchor which
 is also defined at training time. Each anchor is defined as the
 following tuple:
-`(anchor-center-x, anchor-center-y, anchor-width anchor-height)`
+`(anchor-center-x, anchor-center-y, anchor-width, anchor-height)`
 
 Once the following formulas have been applied, the bounding boxes
 center is calculated along with its size.
@@ -45,7 +45,7 @@ bounding-box-height = expf (height * SIZE_VARIANCE) * anchor-height
 
 |box-1 | box-1 | box-1 | box-1 | box-2 | box-2 | box-2 | box-2 | ... | COUNT|COUNT|COUNT|COUNT|
 |---   |---    |---    |---    |---    |---    |---    |---    |---  |---                |---                |---                |---                |
-| top-left-X | top-left-Y | width | height | top-left-X | top-left-Y | width | height | ...  top-left-X | top-left-Y | width | height |
+| top-left-X | top-left-Y | width | height | top-left-X | top-left-Y | width | height | ... |  top-left-X | top-left-Y | width | height |
 
 Memory layout of tensor data:
 
