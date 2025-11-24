@@ -13,6 +13,8 @@ mask coefficients for YOLOv8 segmentation model. This tensor provides all detect
 information plus the coefficients needed to generate segmentation masks when
 combined with [prototype masks](/tensors/yolo-v8-segmentation-out-protos.md).
 
+This is based on [YOLO v8](/tensors/yolo-v8-out.md)
+
 ## Detection Predictions Tensor
 
 - tensor-shape: 1 x 116 x 21504
