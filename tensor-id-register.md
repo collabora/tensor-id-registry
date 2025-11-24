@@ -12,6 +12,7 @@
 |yolo-v8-pose-out | [details](/tensors/yolo-v8-pose-out.md) |
 |yolo-v8-segmentation-out-detections | [details](/tensors/yolo-v8-segmentation-out-detections.md) |
 |yolo-v8-segmentation-out-protos | [details](/tensors/yolo-v8-segmentation-out-protos.md) |
+|yolo-v8-out | [details](/tensors/yolo-v8-out.md) |
 
 # Tensor Groups (Model Family)
 
