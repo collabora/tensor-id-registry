@@ -19,7 +19,7 @@ Where:
  * N is the number of detected palms/hands
 
 ### Known Aliases
-* output0
+* pdscore_boxx_boxy_boxsize_kp0x_kp0y_kp2x_kp2y
 
 ### Encoding
 
@@ -48,9 +48,9 @@ Memory layout of tensor data (for detection i):
 
 ### Details
 
-- **pd_score** (Channel 0): Confidence score for the detection, typically in range [0, 1]
-- **box_x, box_y** (Channels 1-2): Center coordinates of the detected palm bounding box
-- **box_size** (Channel 3): Size parameter of the bounding box
+- **pd_score** (Channel 0): Confidence score for the detection, in range [0, 1]
+- **box_x, box_y** (Channels 1-2): Center coordinates of the detected palm bounding box in range [0,1] where 0 correspond to the top (or left) and 1 to bottom (or right) edge of the image
+- **box_size** (Channel 3): Side length of the bounding box, where the bounding box is square
 - **Keypoint0** (Channels 4-5): Wrist keypoint 
 - **Keypoint1** (Channels 4-5): Middle finger joint to palm
 
@@ -62,10 +62,10 @@ Memory layout of tensor data (for detection i):
 
 # Models
 
-* palm_detection_full_inf_post_192x192.onnx
+* [palm_detection_full_inf_post_192x192.onnx](https://github.com/PINTO0309/hand-gesture-recognition-using-onnx/blob/main/model/palm_detection/palm_detection_full_inf_post_192x192.onnx)
 
 # Tensor Decoders
 
 |Framework | Links |
 |---       |---    |
-|Keras    | Hand gesture recognition using ONNX |
+|ONNX    | [Hand gesture recognition using ONNX](https://github.com/PINTO0309/hand-gesture-recognition-using-onnx/blob/main/model/palm_detection/palm_detection.py) |
