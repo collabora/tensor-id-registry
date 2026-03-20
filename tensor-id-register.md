@@ -25,6 +25,9 @@
 |ctc-text-recognition-out-logits | [details](/tensors/ctc-text-recognition-out-logits.md) |
 |yolo-26-end2end-out | [details](/tensors/yolo-26-end2end-out.md) |
 |palm-detection-out | [details](/tensors/palm-detection-out-detections.md) |
+|hand-landmark-out-landmarks | [details](/tensors/hand-landmark-out-landmarks.md) |
+|hand-landmark-out-score | [details](/tensors/hand-landmark-out-score.md) |
+|hand-landmark-out-handedness | [details](/tensors/hand-landmark-out-handedness.md) |
 
 # Tensor Groups (Model Family)
 
@@ -37,3 +40,4 @@
 |yolo-v8-segmentation-out-normalized | [details](/tensor-groups/yolo-v8-segmentation-out-normalized.md) |
 |ctc-text-recognition-out | [details](/tensor-groups/ctc-text-recognition-out.md) |
 |palm-detection-out | [details](/tensor-groups/palm-detection-out.md) |
+|hand-landmark-out | [details](/tensor-groups/hand-landmark-out.md) |
