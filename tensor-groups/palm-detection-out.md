@@ -53,13 +53,14 @@ angle = atan2 (-d_y, d_x )
 
 # Models
 
-* palm_detection_full_inf_post_192x192.onnx
+* [palm_detection_full_inf_post_192x192.onnx]
 
 # Tensor Decoders
 
 |Framework | Links |
 |---       |---    |
-|Keras    | Hand gesture recognition using ONNX |
+|ONNX / Python | [Hand gesture recognition using ONNX](https://github.com/PINTO0309/hand-gesture-recognition-using-onnx) |
 
 
 [detections]: /tensors/palm-detection-out-detections.md
+[palm_detection_full_inf_post_192x192.onnx]: /models/palm_detection_full_inf_post_192x192.onnx
