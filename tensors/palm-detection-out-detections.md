@@ -62,7 +62,7 @@ Memory layout of tensor data (for detection i):
 
 # Models
 
-* [palm_detection_full_inf_post_192x192.onnx](https://github.com/PINTO0309/hand-gesture-recognition-using-onnx/blob/main/model/palm_detection/palm_detection_full_inf_post_192x192.onnx)
+* [palm_detection_full_inf_post_192x192.onnx](https://gitlab.collabora.com/gstreamer/onnx-models/-/blob/master/models/palm_detection_full_inf_post_192x192.onnx)
 
 # Tensor Decoders
 
