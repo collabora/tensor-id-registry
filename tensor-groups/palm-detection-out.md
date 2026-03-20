@@ -34,7 +34,7 @@ Foreach detection in detections:
         output_detection = [score, box_x, box_y, box_size, kp0_x, kp0_y, kp2_x, kp2_y]
 ```
 
-## Calulate the orientation of the bounding box
+## Calculate the orientation of the bounding box
 
 ```
 d_x = kp2_x - kp0_x
