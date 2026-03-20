@@ -42,8 +42,8 @@ d_y = kp2_y - kp0_y
 
 angle = atan2 (-d_y, d_x )
 ```
-**d_y** is negated because image have y coordinate increase in the opposite direction of mathematical convention.
-**angle** in radian
+**d_y** is negated because, in image coordinate systems, the y-axis typically increases downward, opposite to the conventional mathematical coordinate system.
+**angle** is measured in radians.
 
 # External References
 
