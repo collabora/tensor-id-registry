@@ -13,6 +13,7 @@
 |yolo-v8-segmentation-out-detections | [details](/tensors/yolo-v8-segmentation-out-detections.md) |
 |yolo-v8-segmentation-out-protos | [details](/tensors/yolo-v8-segmentation-out-protos.md) |
 |yolo-v8-out | [details](/tensors/yolo-v8-out.md) |
+|palm-detection-out-detections | [details](/tensors/palm-detection-out-detections.md) |
 
 # Tensor Groups (Model Family)
 
@@ -21,3 +22,4 @@
 |ssd-mobilenet-v1-variant-1-out | [details](/tensor-groups/ssd-mobilenet-v1-variant-1-out.md) |
 |ultra-lightweight-face-detection-rfb-320-v1-variant-1-out | [details](/tensor-groups/ultra-lightweight-face-detection-rfb-320-v1-variant-1-out.md) |
 |yolo-v8-segmentation-out | [details](/tensor-groups/yolo-v8-segmentation-out.md) |
+|palm-detection-out | [details](/tensor-groups/palm-detection-out.md) |
