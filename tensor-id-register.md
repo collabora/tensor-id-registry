@@ -20,6 +20,9 @@
 |yolo-v8-pose-out-normalized | [details](/tensors/yolo-v8-pose-out-normalized.md) |
 |yolo-v8-segmentation-out-detections-normalized | [details](/tensors/yolo-v8-segmentation-out-detections-normalized.md) |
 |yolox-out | [details](/tensors/yolox-out.md) |
+|face-det-lite-out-heatmap | [details](/tensors/face-det-lite-out-heatmap.md) |
+|face-det-lite-out-boxes | [details](/tensors/face-det-lite-out-boxes.md) |
+|face-det-lite-out-landmarks | [details](/tensors/face-det-lite-out-landmarks.md) |
 
 # Tensor Groups (Model Family)
 
@@ -30,3 +33,4 @@
 |ultra-lightweight-face-detection-rfb-320-v1-without-postproc-out | [details](/tensor-groups/ultra-lightweight-face-detection-rfb-320-v1-without-postproc-out.md) |
 |yolo-v8-segmentation-out | [details](/tensor-groups/yolo-v8-segmentation-out.md) |
 |yolo-v8-segmentation-out-normalized | [details](/tensor-groups/yolo-v8-segmentation-out-normalized.md) |
+|face-det-lite-out | [details](/tensor-groups/face-det-lite-out.md) |
