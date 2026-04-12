@@ -30,6 +30,8 @@ Where:
 
 Scheme: (X: x-coord, Y: y-coord, W: width, H: height, C0-Cc: class probabilities, R: rotation)
 
+Bounding box fields X, Y, W, H are **center-format** and expressed in **pixel space** relative to the input image dimensions. The rotation angle R is in radians.
+
 The tensor contains (4 + NUM_CLASSES + 1) channels with the following layout per spatial location:
 
 | Channels 0-3 | Channels 4-(NUM_CLASSES+3) | Channel NUM_CLASSES+4 |

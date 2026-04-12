@@ -29,6 +29,8 @@ Where:
 
 Scheme: (X: x-coord, Y: y-coord, W: width, H: height, C0-Cx: class probabilities)
 
+Bounding box fields X, Y, W, H are **center-format** and expressed in **pixel space** relative to the input image dimensions.
+
 The tensor contains 116 channels with the following layout per spatial location:
 
 |Channels 0-3  | Channels 4-x |
