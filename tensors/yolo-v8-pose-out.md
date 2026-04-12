@@ -46,14 +46,13 @@ Foreach i in outputs.shape[0]:
 
 ### Encoding
 
-Center-based format, normalized to [0,1]:
-
 Scheme: [X, Y, W, H, S, K1X, K1Y, K1C, ..., K17X, K17Y, K17C]
 
-- X, Y = box center
-- W, H = box width/height
+- X, Y = box center, expressed in **pixel space** relative to the input image dimensions
+- W, H = box width/height, expressed in **pixel space** relative to the input image dimensions
 - S = person-confidence
-- KkX, KkY, KkC = keypoint k (x, y, confidence), k = 1...17
+- KkX, KkY = keypoint k coordinates, expressed in **pixel space**, k = 1...17
+- KkC = keypoint k confidence score, k = 1...17
 
 Memory layout of output tensor data (shape `1×56×8400`):
 
