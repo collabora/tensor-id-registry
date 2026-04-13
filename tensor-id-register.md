@@ -14,6 +14,9 @@
 |yolo-v8-segmentation-out-protos | [details](/tensors/yolo-v8-segmentation-out-protos.md) |
 |yolo-v8-out | [details](/tensors/yolo-v8-out.md) |
 |palm-detection-out | [details](/tensors/palm-detection-out-detections.md) |
+|hand-landmark-out-landmarks | [details](/tensors/hand-landmark-out-landmarks.md) |
+|hand-landmark-out-score | [details](/tensors/hand-landmark-out-score.md) |
+|hand-landmark-out-handedness | [details](/tensors/hand-landmark-out-handedness.md) |
 
 # Tensor Groups (Model Family)
 
@@ -23,3 +26,4 @@
 |ultra-lightweight-face-detection-rfb-320-v1-variant-1-out | [details](/tensor-groups/ultra-lightweight-face-detection-rfb-320-v1-variant-1-out.md) |
 |yolo-v8-segmentation-out | [details](/tensor-groups/yolo-v8-segmentation-out.md) |
 |palm-detection-out | [details](/tensor-groups/palm-detection-out.md) |
+|hand-landmark-out | [details](/tensor-groups/hand-landmark-out.md) |
