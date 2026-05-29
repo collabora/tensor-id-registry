@@ -15,6 +15,7 @@
 |yolo-v8-segmentation-out-protos | [details](/tensors/yolo-v8-segmentation-out-protos.md) |
 |yolo-v8-out | [details](/tensors/yolo-v8-out.md) |
 |yolo-v8-obb-out | [details](/tensors/yolo-v8-obb-out.md) |
+|yolox-out | [details](/tensors/yolox-out.md) |
 
 # Tensor Groups (Model Family)
 
