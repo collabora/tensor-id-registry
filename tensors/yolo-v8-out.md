@@ -6,7 +6,7 @@
 
 # Description
 
-Combined detection predictions containing bounding boxes and class probabilities YOLO v8-v11 ibject detection models model.
+Combined detection predictions containing bounding boxes and class probabilities YOLO v8-v11 object detection models model.
 
 This is the base for the [YOLOv8 Segmentation detections tensor](/tensors/yolo-v8-segmentation-out-detections.md).
 
