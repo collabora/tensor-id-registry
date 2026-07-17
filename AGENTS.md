@@ -1,4 +1,4 @@
-# Copilot Instructions for Tensor ID Registry
+# Instructions for Tensor ID Registry
 
 ## Repository Purpose
 
@@ -83,15 +83,15 @@ See `submission-guideline.md` for full requirements including:
 This repository is configured to use the following MCP servers:
 
 ### git
-Enables Copilot to inspect commit history, track contributions, and analyze changes. Useful for:
+Enables agents to inspect commit history, track contributions, and analyze changes. Useful for:
 - Understanding who added specific tensor definitions
 - Reviewing changes to tensor documentation
 - Tracing evolution of tensor encodings
 
 ### web
-Enables Copilot to fetch and validate external resources. Useful for:
+Enables agents to fetch and validate external resources. Useful for:
 - Verifying links to referenced papers and models
 - Checking availability of public code implementations
 - Validating framework decoder links in Tensor Decoders sections
 
-These servers enhance Copilot's ability to maintain documentation quality and consistency across the registry.
+These servers enhance agents ability to maintain documentation quality and consistency across the registry.
