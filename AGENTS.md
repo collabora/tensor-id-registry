@@ -20,6 +20,26 @@ Tensor IDs follow this pattern: `{architecture}-{variant}-{type}-{function}`
 
 Example: `yolo-v8-segmentation-out-detections`
 
+### Source Quality and Variant Coverage (Required)
+
+When documenting a new model family, do not stop at a single repo release page.
+
+1. **Use primary sources first**:
+   - Original paper/preprint (required)
+   - Original/canonical implementation repo (required)
+   - Concrete model artifacts (ONNX/TFLite/etc.) used to infer tensor shapes
+2. **Add secondary implementations** when available (ports, SDK/toolkit decoders, re-implementations) to cross-check decoding behavior.
+3. **Document major variants explicitly** (at minimum):
+   - landmark/class count variants (for example 68/98/19),
+   - dataset/supervision variants,
+   - backbone variants,
+   - export/runtime variants that change tensor shape/order.
+4. **Earliest-origin requirement (tensors)**: when adding a new tensor, identify the earliest known model family that used that tensor encoding and name the tensor after that original source (not a later re-export/rebrand) when possible.
+5. **Earliest-origin requirement (tensor-groups)**: when adding a tensor-group, identify and cite the earliest known source model/paper that defines that multi-tensor output contract.
+6. **Reference-tracing requirement**: do not stop at one paper/repo. Follow references/citations backward ("climb up" the paper trail) to find the original encoding source, then cite both original and current practical implementation sources.
+7. **Tensor reuse rule**: if a tensor encoding is equivalent to an existing/original encoding already in this registry, reuse the original tensor ID instead of creating a model-specific duplicate, and cite the original paper/source for that encoding.
+8. **Tensor-group requirement**: when outputs are multi-tensor, the tensor-group file must explain how all tensors are decoded together (joint interpretation), not only list them.
+
 ### Tensor File Structure
 Each tensor file (`tensors/{tensor-id}.md`) must include:
 1. **Classification** section:
