@@ -20,6 +20,7 @@
 |yolo-v8-pose-out-normalized | [details](/tensors/yolo-v8-pose-out-normalized.md) |
 |yolo-v8-segmentation-out-detections-normalized | [details](/tensors/yolo-v8-segmentation-out-detections-normalized.md) |
 |yolox-out | [details](/tensors/yolox-out.md) |
+|yolo-26-end2end-out | [details](/tensors/yolo-26-end2end-out.md) |
 
 # Tensor Groups (Model Family)
 
