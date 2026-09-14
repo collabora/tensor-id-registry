@@ -21,6 +21,8 @@
 |yolo-v8-segmentation-out-detections-normalized | [details](/tensors/yolo-v8-segmentation-out-detections-normalized.md) |
 |yolox-out | [details](/tensors/yolox-out.md) |
 |image-rgb-hwc-out | [details](/tensors/image-rgb-hwc-out.md) |
+|ctc-text-recognition-out-prob | [details](/tensors/ctc-text-recognition-out-prob.md) |
+|ctc-text-recognition-out-logits | [details](/tensors/ctc-text-recognition-out-logits.md) |
 
 # Tensor Groups (Model Family)
 
@@ -31,3 +33,4 @@
 |ultra-lightweight-face-detection-rfb-320-v1-without-postproc-out | [details](/tensor-groups/ultra-lightweight-face-detection-rfb-320-v1-without-postproc-out.md) |
 |yolo-v8-segmentation-out | [details](/tensor-groups/yolo-v8-segmentation-out.md) |
 |yolo-v8-segmentation-out-normalized | [details](/tensor-groups/yolo-v8-segmentation-out-normalized.md) |
+|ctc-text-recognition-out | [details](/tensor-groups/ctc-text-recognition-out.md) |
