@@ -23,6 +23,11 @@
 |image-rgb-hwc-out | [details](/tensors/image-rgb-hwc-out.md) |
 |ctc-text-recognition-out-prob | [details](/tensors/ctc-text-recognition-out-prob.md) |
 |ctc-text-recognition-out-logits | [details](/tensors/ctc-text-recognition-out-logits.md) |
+|pipnet-out-cls-map | [details](/tensors/pipnet-out-cls-map.md) |
+|pipnet-out-offset-x | [details](/tensors/pipnet-out-offset-x.md) |
+|pipnet-out-offset-y | [details](/tensors/pipnet-out-offset-y.md) |
+|pipnet-out-neighbor-offset-x | [details](/tensors/pipnet-out-neighbor-offset-x.md) |
+|pipnet-out-neighbor-offset-y | [details](/tensors/pipnet-out-neighbor-offset-y.md) |
 
 # Tensor Groups (Model Family)
 
@@ -34,3 +39,4 @@
 |yolo-v8-segmentation-out | [details](/tensor-groups/yolo-v8-segmentation-out.md) |
 |yolo-v8-segmentation-out-normalized | [details](/tensor-groups/yolo-v8-segmentation-out-normalized.md) |
 |ctc-text-recognition-out | [details](/tensor-groups/ctc-text-recognition-out.md) |
+|pipnet-out | [details](/tensor-groups/pipnet-out.md) |
