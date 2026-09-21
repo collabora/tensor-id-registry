@@ -23,6 +23,10 @@
 |image-rgb-hwc-out | [details](/tensors/image-rgb-hwc-out.md) |
 |ctc-text-recognition-out-prob | [details](/tensors/ctc-text-recognition-out-prob.md) |
 |ctc-text-recognition-out-logits | [details](/tensors/ctc-text-recognition-out-logits.md) |
+|hopenet-out-yaw | [details](/tensors/hopenet-out-yaw.md) |
+|hopenet-out-pitch | [details](/tensors/hopenet-out-pitch.md) |
+|hopenet-softmaxed-out-yaw | [details](/tensors/hopenet-softmaxed-out-yaw.md) |
+|hopenet-softmaxed-out-pitch | [details](/tensors/hopenet-softmaxed-out-pitch.md) |
 
 # Tensor Groups (Model Family)
 
@@ -34,3 +38,5 @@
 |yolo-v8-segmentation-out | [details](/tensor-groups/yolo-v8-segmentation-out.md) |
 |yolo-v8-segmentation-out-normalized | [details](/tensor-groups/yolo-v8-segmentation-out-normalized.md) |
 |ctc-text-recognition-out | [details](/tensor-groups/ctc-text-recognition-out.md) |
+|l2cs-net-out | [details](/tensor-groups/l2cs-net-out.md) |
+|l2cs-net-softmaxed-out | [details](/tensor-groups/l2cs-net-softmaxed-out.md) |
