@@ -24,6 +24,7 @@
 |ctc-text-recognition-out-prob | [details](/tensors/ctc-text-recognition-out-prob.md) |
 |ctc-text-recognition-out-logits | [details](/tensors/ctc-text-recognition-out-logits.md) |
 |yolo-26-end2end-out | [details](/tensors/yolo-26-end2end-out.md) |
+|craft-out | [details](/tensors/craft-out.md) |
 
 # Tensor Groups (Model Family)
 
