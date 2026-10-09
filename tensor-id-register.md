@@ -24,6 +24,11 @@
 |ctc-text-recognition-out-prob | [details](/tensors/ctc-text-recognition-out-prob.md) |
 |ctc-text-recognition-out-logits | [details](/tensors/ctc-text-recognition-out-logits.md) |
 |yolo-26-end2end-out | [details](/tensors/yolo-26-end2end-out.md) |
+|facemesh-v1-out-landmarks | [details](/tensors/facemesh-v1-out-landmarks.md) |
+|facemesh-v1-out-presence | [details](/tensors/facemesh-v1-out-presence.md) |
+|facemesh-v2-out-landmarks | [details](/tensors/facemesh-v2-out-landmarks.md) |
+|facemesh-v2-out-presence | [details](/tensors/facemesh-v2-out-presence.md) |
+|facemesh-v2-out-blendshapes | [details](/tensors/facemesh-v2-out-blendshapes.md) |
 
 # Tensor Groups (Model Family)
 
@@ -35,3 +40,5 @@
 |yolo-v8-segmentation-out | [details](/tensor-groups/yolo-v8-segmentation-out.md) |
 |yolo-v8-segmentation-out-normalized | [details](/tensor-groups/yolo-v8-segmentation-out-normalized.md) |
 |ctc-text-recognition-out | [details](/tensor-groups/ctc-text-recognition-out.md) |
+|facemesh-v1-out | [details](/tensor-groups/facemesh-v1-out.md) |
+|facemesh-v2-out | [details](/tensor-groups/facemesh-v2-out.md) |
