@@ -35,18 +35,28 @@ The tensor contains 8 channels with the following layout per detection:
 | Score     | Box_X     | Box_Y     | Box_Size   | Keypoint0-x   | Keypoint0-y | Keypoint2-x | Keypoint2-y   |
 
 
-Memory layout of tensor data (for detection i):
+Memory layout of tensor data (detections are stored contiguously, N detections of 8 values each):
 
-|Index           | Symbol            | Value              | Comment                                    |
-|---             |---                |---                 |---                                         |
-|0               | pd_score          | detection-i-confidence | tensor-start,            |
-|1               | box_x             | detection-i-box-center-x | tensor-continue,         |
-|2               | box_y             | detection-i-box-center-y | tensor-continue,         |
-|3               | box_size          | detection-i-size   | tensor-continue,          |
-|4               | keypoint0_x             | detection-i-keypoint0-x | tensor-continue,    |
-|5               | keypoint0_y             | detection-i-keypoint0-y | tensor-continue,    |
-|6               | keypoint2_x             | detection-i-keypoint2-x | tensor-continue,    |
-|7               | keypoint2_y             | detection-i-keypoint2-y | tensor-end,        |
+|Index|Value|
+|---|---|
+|0|detection-0-score (tensor-start)|
+|1|detection-0-box-center-x|
+|2|detection-0-box-center-y|
+|3|detection-0-box-size|
+|4|detection-0-keypoint0-x|
+|5|detection-0-keypoint0-y|
+|6|detection-0-keypoint2-x|
+|7|detection-0-keypoint2-y|
+|...|...|
+|(N - 1) × 8 + 0|detection-(N-1)-score|
+|(N - 1) × 8 + 1|detection-(N-1)-box-center-x|
+|(N - 1) × 8 + 2|detection-(N-1)-box-center-y|
+|(N - 1) × 8 + 3|detection-(N-1)-box-size|
+|(N - 1) × 8 + 4|detection-(N-1)-keypoint0-x|
+|(N - 1) × 8 + 5|detection-(N-1)-keypoint0-y|
+|(N - 1) × 8 + 6|detection-(N-1)-keypoint2-x|
+|(N - 1) × 8 + 7|detection-(N-1)-keypoint2-y (tensor-end)|
+
 
 ### Details
 
