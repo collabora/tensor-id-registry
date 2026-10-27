@@ -9,7 +9,9 @@
 
 # Description
 
-Confidence levels of faces associated [bounding boxes location](/tensors/ultra-lightweight-face-detection-rfb-320-v1-variant-1-out-boxes.md)
+Confidence levels of faces associated with bounding boxes location
+([post-processed](/tensors/ssd-mobilenet-v1-variant-1-out-boxes.md) |
+[without post-processing](/tensors/ultra-lightweight-face-detection-rfb-320-v1-variant-1-out-boxes-without-postproc.md))
 
 ## Scores Tensor
 
