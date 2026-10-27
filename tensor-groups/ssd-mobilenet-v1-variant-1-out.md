@@ -46,7 +46,7 @@ Foreach i in count:
 |GStreamer | [perm](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/blob/c206ddd9308a3ce529e0d8957b7c165b3a15c932/subprojects/gst-plugins-bad/gst/tensordecoders/gstssdobjectdetector.c#L36-39) \| [latest](https://gitlab.freedesktop.org/gstreamer/gstreamer/-/blob/main/subprojects/gst-plugins-bad/gst/tensordecoders/gstssdtensordec.c?ref_type=heads#L36-39) |
 
 
-[count]: /tensor-groups/generic-variant-1-out-count.md
+[count]: /tensors/generic-variant-1-out-count.md
 [boxes]: /tensors/ssd-mobilenet-v1-variant-1-out-boxes.md
 [classes]: /tensors/ssd-mobilenet-v1-variant-1-out-classes.md
 [scores]: /tensors/ssd-mobilenet-v1-variant-1-out-scores.md
