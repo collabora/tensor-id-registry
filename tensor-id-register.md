@@ -31,6 +31,15 @@
 |facemesh-v2-out-landmarks | [details](/tensors/facemesh-v2-out-landmarks.md) |
 |facemesh-v2-out-presence | [details](/tensors/facemesh-v2-out-presence.md) |
 |facemesh-v2-out-blendshapes | [details](/tensors/facemesh-v2-out-blendshapes.md) |
+|whisper-encoder-in-features | [details](/tensors/whisper-encoder-in-features.md) |
+|whisper-encoder-inout-hidden-states | [details](/tensors/whisper-encoder-inout-hidden-states.md) |
+|whisper-decoder-in-token-ids | [details](/tensors/whisper-decoder-in-token-ids.md) |
+|whisper-decoder-out-logits | [details](/tensors/whisper-decoder-out-logits.md) |
+|`whisper-decoder-out-cross-attention-weights.<layer>` | [details](/tensors/whisper-decoder-out-cross-attention-weights.md) |
+|`whisper-decoder-inout-self-attention-key.<layer>` | [details](/tensors/whisper-decoder-inout-self-attention-key.md) |
+|`whisper-decoder-inout-self-attention-value.<layer>` | [details](/tensors/whisper-decoder-inout-self-attention-value.md) |
+|`whisper-decoder-inout-cross-attention-key.<layer>` | [details](/tensors/whisper-decoder-inout-cross-attention-key.md) |
+|`whisper-decoder-inout-cross-attention-value.<layer>` | [details](/tensors/whisper-decoder-inout-cross-attention-value.md) |
 
 # Tensor Groups (Model Family)
 
@@ -45,3 +54,6 @@
 |palm-detection-out | [details](/tensor-groups/palm-detection-out.md) |
 |facemesh-v1-out | [details](/tensor-groups/facemesh-v1-out.md) |
 |facemesh-v2-out | [details](/tensor-groups/facemesh-v2-out.md) |
+|whisper-encoder | [details](/tensor-groups/whisper-encoder.md) |
+|whisper-decoder | [details](/tensor-groups/whisper-decoder.md) |
+|whisper-decoder-with-kv-cache | [details](/tensor-groups/whisper-decoder-with-kv-cache.md) |
